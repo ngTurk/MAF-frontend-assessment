@@ -1,0 +1,15 @@
+// Fonts
+$font-lato: 'Lato';
+
+// Colors
+$white: #FFFFFF;
+$shadow-black: rgba(51,51,51,0.25);
+$black: #000000;
+
+// Breakpoint Variables
+$breakpoint-mobile: 480px;
+$breakpoint-tablet-portrait: 768px;
+
+// Media Query Variables
+$media-mobile: 'all and (max-width: #{$breakpoint-mobile})';
+$media-tablet-portrait: 'all and (max-width: #{$breakpoint-tablet-portrait})';
