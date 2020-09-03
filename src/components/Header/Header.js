@@ -20,7 +20,13 @@ export default function Header() {
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, false);
-  }, []);
+
+    if (isCollapsed) {
+      document.body.setAttribute('style', 'overflow: hidden');
+    } else {
+      document.body.removeAttribute('style');
+    }
+  });
 
   return (
     <header ref={navRef}>
