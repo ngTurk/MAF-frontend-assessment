@@ -2,7 +2,10 @@
 
 .navigation {
     display: flex;
-    margin-top: 61px;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .navigation__menu-icon {
@@ -46,6 +49,7 @@
         top: 0;
         transition: left 0.7s ease;
         width: 400px;
+        z-index: 2;
 
         ul {
             display: block;
