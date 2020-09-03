@@ -1,0 +1,118 @@
+@import '../../assets/style/variables.scss';
+
+.navigation {
+    display: flex;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.navigation__menu-icon {
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+
+.navigation__brand-logo {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+
+    img:last-child {
+        margin-top: 46px;
+    }
+}
+
+.navigation__right-side {
+    img {
+        height: 16px;
+        margin-right: 9px;
+        width: 21px;
+    }
+
+    span {
+        color: $white;
+        font-family: $font-lato;
+    }
+}
+
+.navigation-sidebar {
+    aside {
+        background-color: #1b1b1b;
+        box-shadow: 14px 2px 22px -4px rgba(0,0,0,0.75);
+        color: $white;
+        height: 100%;
+        left: -500px;
+        padding-top: 50px;
+        position: absolute;
+        top: 0;
+        transition: left 0.7s ease;
+        width: 400px;
+        z-index: 2;
+
+        ul {
+            display: block;
+            white-space: nowrap;
+        }
+
+        li {
+            cursor: pointer;
+            margin: 30px;
+        }
+
+        img {
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 20px;
+        }
+    }
+}
+
+.navigation__sidebar-collapsed aside {
+    left: 0;
+}
+
+@media #{$media-tablet-portrait} {
+    .navigation__menu-icon {
+        height: 18px;
+        margin-left: 20px;
+        width: 18px;
+    }
+
+    .navigation__brand-logo img:last-child {
+        margin-top: 20px;
+        width: 200px;
+    }
+
+    .navigation__right-side {
+        img {
+            height: 16px;
+            margin-right: 9px;
+            width: 21px;
+        }
+
+        span {
+            max-width: 180px;
+        }
+    }
+}
+
+@media #{$media-mobile} {
+    .navigation__right-side {
+        font-size: 12px;
+        left: 20px;
+        position: absolute;
+        top: 10px;
+    }
+
+    .navigation__right-side span {
+        max-width: unset;
+    }
+
+    .navigation-sidebar aside {
+        width: 100%;
+    }
+}
