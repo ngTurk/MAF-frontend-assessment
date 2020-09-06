@@ -4,12 +4,18 @@ $font-lato: 'Lato';
 // Colors
 $white: #FFFFFF;
 $shadow-black: rgba(51,51,51,0.25);
+$light-white: rgba(255,255,255,0.25);
 $black: #000000;
+$grey-10: #181818;
+$red: #DF1F26;
+$mercury: #E4E4E4;
 
 // Breakpoint Variables
 $breakpoint-mobile: 480px;
 $breakpoint-tablet-portrait: 768px;
+$breakpoint-tablet-landscape: 1024px;
 
 // Media Query Variables
 $media-mobile: 'all and (max-width: #{$breakpoint-mobile})';
 $media-tablet-portrait: 'all and (max-width: #{$breakpoint-tablet-portrait})';
+$media-tablet-landscape: 'all and (max-width: #{$breakpoint-tablet-landscape})';
